@@ -12,7 +12,7 @@ A collection of utility nodes for ComfyUI focused on:
 
 # Current Version
 
-v1.0.0
+v1.0.1
 
 ---
 

@@ -1,4 +1,10 @@
 # HB ComfyUI Nodes Changelog
+---
+
+# v1.0.1
+
+### Changed
+- Updated registry display name to "ComfyUI HB Party"
 
 ---
 
