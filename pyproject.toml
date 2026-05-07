@@ -1,0 +1,15 @@
+[project]
+name = "comfyui-hb-party"
+description = "Utility nodes for ComfyUI featuring a dynamic Text Preset Switch with workflow-safe persistence and Node 2.0 support."
+version = "1.0.0"
+license = { text = "MIT" }
+
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/HassanEclipse/comfyui-hb-party"
+
+[tool.comfy]
+PublisherId = "hassan-mb"
+DisplayName = "HB ComfyUI Nodes"
+Icon = ""
