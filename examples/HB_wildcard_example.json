@@ -1,0 +1,296 @@
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "revision": 0,
+  "last_node_id": 13,
+  "last_link_id": 9,
+  "nodes": [
+    {
+      "id": 3,
+      "type": "Primitive string multiline [Crystools]",
+      "pos": [
+        -512.703857421875,
+        126.33168029785156
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "links": [
+            5
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI-Crystools",
+        "ver": "576b44b9b79e3bf4b5d50457a28924d89a42e7e1",
+        "Node name for S&R": "Primitive string multiline [Crystools]"
+      },
+      "widgets_values": [
+        "clean prompot,noSpace,   moreThanOnceSpace, twoCommas,, moreThanOnceComma,,, moon, car\nnewLine\n\n\nFirst color: __!primary_colors__ , , \nSecond color: __!primary_colors__,\nThird color (unlocked): __primary_colors__\n\nHe is at a __places__ with a __primary_colors__ backpack that has a person wearing __attire__\n\n"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "JN_Wildcard Processor",
+      "pos": [
+        9.947942733764648,
+        103.2369613647461
+      ],
+      "size": [
+        263.1000061035156,
+        160.5
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            4
+          ]
+        },
+        {
+          "name": "report",
+          "type": "STRING",
+          "links": [
+            6
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JN_Wildcard Processor"
+      },
+      "widgets_values": [
+        "This is a {5::red|4::green|7::blue|black} and __primary_colors__ example",
+        1798,
+        "randomize"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 8,
+      "type": "JN_TidyString",
+      "pos": [
+        629.3863525390625,
+        452.3603515625
+      ],
+      "size": [
+        210,
+        82
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 8
+        }
+      ],
+      "outputs": [
+        {
+          "name": "tidied_text",
+          "type": "STRING",
+          "links": [
+            9
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JN_TidyString"
+      },
+      "widgets_values": [
+        "",
+        "enable"
+      ],
+      "color": "#233",
+      "bgcolor": "#355"
+    },
+    {
+      "id": 9,
+      "type": "Show any to JSON [Crystools]",
+      "pos": [
+        887.4515991210938,
+        446.245361328125
+      ],
+      "size": [
+        440.30908203125,
+        183.27272033691406
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "any_value",
+          "shape": 7,
+          "type": "*",
+          "link": 9
+        }
+      ],
+      "outputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI-Crystools",
+        "ver": "576b44b9b79e3bf4b5d50457a28924d89a42e7e1",
+        "Node name for S&R": "Show any to JSON [Crystools]"
+      }
+    },
+    {
+      "id": 2,
+      "type": "Show any to JSON [Crystools]",
+      "pos": [
+        354.4736022949219,
+        466.59759521484375
+      ],
+      "size": [
+        241.2181854248047,
+        172.36363220214844
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "any_value",
+          "shape": 7,
+          "type": "*",
+          "link": 4
+        }
+      ],
+      "outputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "links": [
+            8
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI-Crystools",
+        "ver": "576b44b9b79e3bf4b5d50457a28924d89a42e7e1",
+        "Node name for S&R": "Show any to JSON [Crystools]"
+      }
+    },
+    {
+      "id": 6,
+      "type": "Show any to JSON [Crystools]",
+      "pos": [
+        330.30487060546875,
+        120.34571075439453
+      ],
+      "size": [
+        241.2181854248047,
+        172.36363220214844
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "any_value",
+          "shape": 7,
+          "type": "*",
+          "link": 6
+        }
+      ],
+      "outputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "ComfyUI-Crystools",
+        "ver": "576b44b9b79e3bf4b5d50457a28924d89a42e7e1",
+        "Node name for S&R": "Show any to JSON [Crystools]"
+      }
+    }
+  ],
+  "links": [
+    [
+      4,
+      4,
+      0,
+      2,
+      0,
+      "*"
+    ],
+    [
+      5,
+      3,
+      0,
+      4,
+      0,
+      "STRING"
+    ],
+    [
+      6,
+      4,
+      1,
+      6,
+      0,
+      "*"
+    ],
+    [
+      8,
+      2,
+      0,
+      8,
+      0,
+      "STRING"
+    ],
+    [
+      9,
+      8,
+      0,
+      9,
+      0,
+      "*"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.7513148009015777,
+      "offset": [
+        1054.1968515358853,
+        466.45036050171007
+      ]
+    }
+  },
+  "version": 0.4
+}
