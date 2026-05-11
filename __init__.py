@@ -1,5 +1,5 @@
 import os
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 from .wildcard_processor import HB_WildcardProcessor
 from .tidy_string import HB_TidyString
