@@ -3,7 +3,7 @@ __pycache__/
 *.py[codz]
 *$py.class
 *.pyc
-
+release.bat
 *.zip
 
 # C extensions
